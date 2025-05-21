@@ -18,6 +18,16 @@ Created by Moaru
 
 ---
 
+## 🖥️ Minimum VPS Requirements
+```
+OS      : Ubuntu 20.04 atau lebih baru
+CPU     : Minimal 2 vCPU
+RAM     : Minimal 4 GB
+Storage : Minimal 50 GB SSD
+Network : Koneksi internet stabil
+Akses   : Root atau user dengan sudo privileges
+```
+
 ## 🚀 Cara Penggunaan
 
 1. Daftar menggunakan google/gmail https://app.blockcast.network/dashboard
