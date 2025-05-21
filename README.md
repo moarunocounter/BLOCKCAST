@@ -30,7 +30,7 @@ Akses   : Root atau user dengan sudo privileges
 
 ## 🚀 Cara Penggunaan
 
-1. Daftar menggunakan google/gmail https://app.blockcast.network/dashboard
+1. Daftar menggunakan google/gmail [https://app.blockcast.network/dashboard](https://app.blockcast.network?referral-code=qAxYV4)
 
 2. Masuk ke VPS dan Buat screen lebih dulu
    ```bash
