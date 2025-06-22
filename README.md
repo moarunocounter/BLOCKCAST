@@ -1,45 +1,79 @@
-# BLOCKCAST Node Manager
+# Blockcast Node Installer by MOARU
 
-Script bash interaktif untuk membantu mengelola node Blockcast secara mudah dan cepat.  
-Created by Moaru
-
-📢 Telegram: [@airdropalc](https://t.me/airdropalc)
+Script ini memudahkan Anda untuk menginstal dan mengelola node **Blockcast** secara otomatis menggunakan `docker-compose`.  
+Dirancang agar ramah untuk pemula, hanya butuh klik & jalan!
 
 ---
 
-## 📦 Fitur
+## ⚙️ Fitur
 
-- Install dependencies (Docker, git, dll)
-- Clone repo Blockcast beacon
-- Jalankan node secara otomatis
-- Inisialisasi node (`blockcast init`)
-- Cek log node
-- Hentikan dan hapus node dengan aman
+- Instalasi otomatis Docker + Docker Compose
+- Clone repo resmi Blockcast
+- Jalankan node & init (untuk mendapatkan Hardware ID dan Challenge Key)
+- Monitoring log node
+- Opsi bersih-bersih (uninstall)
 
 ---
 
-## 🖥️ Minimum VPS Requirements
-```
-OS      : Ubuntu 20.04 atau lebih baru
-CPU     : Minimal 2 vCPU
-RAM     : Minimal 4 GB
-Storage : Minimal 50 GB SSD
-Network : Koneksi internet stabil
-Akses   : Root atau user dengan sudo privileges
+## 🚀 Cara Menggunakan
+
+```bash
+wget https://github.com/moarunocounter/BLOCKCAST && chmod +x blockcast.sh && ./blockcast.sh
 ```
 
-## 🚀 Cara Penggunaan
+---
 
-1. Daftar menggunakan google/gmail [https://app.blockcast.network/dashboard](https://app.blockcast.network?referral-code=qAxYV4)
+## 📋 Menu Interaktif
 
-2. Masuk ke VPS dan Buat screen lebih dulu
-   ```bash
-   screen -S blockcast
-   ```
+```text
+1) Install dependencies & clone repo
+2) Start Blockcast service
+3) Jalankan node (copy Hardware ID & Challenge Key)
+4) Cek logs node kamu
+5) Stop dan Hapus semua
+6) Exit
+```
 
-3. Clone repo ini:
-   ```bash
-   git clone https://github.com/moarunocounter/BLOCKCAST.git && cd BLOCKCAST && chmod +x blockcast.sh && ./blockcast.sh
-   ```
+---
 
-4. Pergi ke Web Blockcast dan Masukkan Hardware ID serta Challenge key yang sudah kalian buat diVPS tadi.
+## 💡 Spesifikasi VPS yang Disarankan
+
+| Komponen   | Rekomendasi           |
+|------------|------------------------|
+| **CPU**    | 2 vCPU atau lebih      |
+| **RAM**    | Minimal 4 GB           |
+| **Storage**| 40 GB SSD atau lebih   |
+| **OS**     | Ubuntu 20.04 / 22.04 LTS |
+| **Docker** | Versi terbaru + compose plugin aktif |
+
+> ✅ Pastikan port keluar terbuka (tidak diblokir firewall outbound)
+
+---
+
+## 📦 Output Penting
+
+Saat menjalankan opsi 3, node akan menampilkan:
+
+- `Hardware ID`
+- `Challenge Key`
+
+📝 Salin dua informasi itu dan daftarkan di website resmi Blockcast (jika berlaku whitelist).
+
+---
+
+## 📬 Kontak & Komunitas
+
+- Telegram: [@airdropalc](https://t.me/airdropalc)
+
+---
+
+## 🧹 Uninstall
+
+Jika ingin menghapus node dan semua datanya:
+
+- Pilih opsi **5** di menu
+- Ini akan menghentikan container, hapus image, volume, dan folder repo
+
+---
+
+Selamat menjalankan node Blockcast 🚀
