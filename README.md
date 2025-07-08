@@ -18,7 +18,7 @@ Dirancang agar ramah untuk pemula, hanya butuh klik & jalan!
 ## 🚀 Cara Menggunakan
 
 ```bash
-wget https://github.com/moarunocounter/BLOCKCAST && chmod +x blockcast.sh && ./blockcast.sh
+git clone https://github.com/moarunocounter/BLOCKCAST && chmod +x blockcast.sh && ./blockcast.sh
 ```
 
 ---
